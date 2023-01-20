@@ -1,0 +1,259 @@
+html {
+    font-family: 'Helvetica', sans-serif;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 25px;
+    color: black;
+}
+
+.title{
+    text-align: center;
+}
+
+a {
+    color: #a25454;
+   
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+
+}
+
+input {
+    margin: 10px;
+}
+
+textarea {
+    margin: 10px;
+    width: 50%;
+}
+
+#motivationstext{
+    width: 90%;
+    height: 100px;
+}
+
+button {
+    margin: 10px;
+}
+
+.dropdown{
+    margin: 10px;  
+}
+
+#neueAnfrage {
+    width: 40%;
+    margin: auto;
+}
+
+#meineCouch {
+    width: 40%;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+
+nav {
+    text-align: right;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 130px;
+}
+
+.container-header {
+    width: 33%;
+    text-align: center; 
+}
+
+.couchlogo {
+    width: 50%;
+    object-fit: contain;
+    border-radius: 50px;
+}
+
+button {
+    background-color: white;
+    border-width: 1px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+
+    transition: 100ms linear;
+}
+
+button:hover {
+    padding: 15px 32px;
+    text-decoration: none;
+    transform: scale(1.1);
+    background-color: lightgray;
+
+    transition: 100ms linear;
+}
+
+button:active {
+    background-color: #bd7f80;
+    transition: 100ms linear;
+}
+
+#filter-stadt {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 15px 32px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.stadt-button {
+    padding: 20px 32px;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+
+    background-color: #a25454;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: 100ms linear;
+}
+
+.stadt-button:hover {
+    transform: scale(1.1);
+    transition: 100ms linear;
+    background-color: #bd7f80;
+}
+
+.stadt-button:active {
+    border-color: #a25454;
+    background-color: lightgrey;
+    color: black;
+}
+
+#liste-couch {
+    /*
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    */
+
+    min-width: 300px;
+    max-width: 1000px;
+
+    display: grid;
+
+    /* center align */
+    margin: 0 auto;
+
+    /* grid properties */
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.couch {
+    background-color: white;
+    display: grid;
+    padding: 24px;
+    margin: 4px;
+    border: 1px solid rgb(0, 0, 0);
+    border-style: inset;
+    border-radius: 25px;
+    text-align: center;
+
+    transition: 100ms linear; 
+}
+
+.couch:hover {
+    transition: 100ms linear; 
+    border: 3px solid rgb(0, 0, 0);
+    padding: 21px;
+    background-color: rgb(231, 231, 231);
+
+    transform: scale(1.02);
+}
+
+/*.couch:active {
+    border: 6px solid red;
+    padding: 20px;
+    background-color: hwb(56 87% 0%);
+}
+*/
+
+.couch-image {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.couch a {
+    color: white;
+    background-color: #a25454;
+    font-weight: bold;
+    text-align: center;
+    margin: 10 auto;
+    padding: 15px 32px;
+    border-radius: 50px;
+}
+
+.couch a:hover {
+    transform: scale(1.1);
+    transition: 100ms ease-in-out;
+    background-color: #bd7f80;
+}
+
+.couch a:active {
+    border-width: 4px;
+    border-color: #a25454;
+    background-color: lightgrey;
+    color: black;
+}
+
+.leiderBesetzt {
+    color: #a25454;
+}
+
+/* Kachel-look auf "meine Couch" und "Anfrage" pages eingefügt 
+#neueAnfrage {
+    background-color: white;
+    padding: 24px;
+    margin: 10 auto;
+    border: 1px solid rgb(0, 0, 0);
+    border-style: inset;
+    border-radius: 25px;
+    text-align: center;
+}
+*/
+
+#meineCouch, #neueAnfrage, #loginKachel {
+    background-color: white;
+    padding: 24px;
+    margin: 10 auto;
+    border: 1px solid rgb(0, 0, 0);
+    border-style: inset;
+    border-radius: 25px;
+    text-align: center;
+}
+

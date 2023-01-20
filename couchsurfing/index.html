@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>MMP Couch Surfing</title>
+</head>
+
+<body>
+
+    <header class="flex">
+
+       
+                
+        <div class="container-header">
+            	
+            <a href="index.html">
+                <img class="couchlogo" src="img/CouchsurfingLogo.webp" alt="MMP Couchsurfing Logo">
+            </a>
+
+        </div>
+            
+        
+
+        <div class="container-header">
+
+            <h1>Willkommen <span id="username"></span></h1>
+
+        </div>
+
+        <div class="container-header">
+
+
+        </div>
+
+        <div class="container-header">
+
+
+        </div>
+
+        <nav class="container-header">
+
+            <a href="couch.html">
+
+                <button id="neueCouch">Meine Couch</button>
+
+            </a>
+
+        </nav>
+
+        <nav class="container-header">
+
+             <button id="logout" onclick="logout()"> Logout </button>
+
+        </nav>
+
+    </header>
+
+    <div id="filter-stadt">
+        <a class="stadt-button" href="index.html">Alle Couches anzeigen</a><br>
+        <a class="stadt-button" href="index.html?stadtID=1">Couches in Bern anzeigen</a><br>
+        <a class="stadt-button" href="index.html?stadtID=2">Couches in Chur anzeigen</a><br>
+        <a class="stadt-button" href="index.html?stadtID=3">Couches in Zürich anzeigen</a><br><br>
+    </div>
+
+    <div id="liste-couch"></div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

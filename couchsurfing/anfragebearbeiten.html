@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>MMP Couch Surfing</title>
+</head>
+
+<body>
+
+    <header class="flex">
+
+        <div class="container-header">
+
+            <a href="index.html">
+                <img class="couchlogo" src="img/CouchsurfingLogo.webp" alt="MMP Couchsurfing Logo">
+            </a>
+        </div>
+
+        <div class="container-header">
+
+            <h1>Couch Anfrage</h1>
+
+        </div>
+
+        <div class="container-header">
+
+
+        </div>
+
+        <nav class="container-header">
+
+            <a href="index.html">
+
+                <button>Couch suchen</button>
+
+            </a>
+        </nav>
+
+        <nav class="container-header">
+
+            <a href="couch.html">
+
+                <button>Meine Couch</button>
+
+            </a>
+        
+        </nav>
+
+        <nav class="container-header">
+
+            <button id="logout" onclick="logout()"> Logout </button>
+
+        </nav>
+
+    </header>
+
+
+
+    <div id="neueAnfrage">
+
+        <p id="infoText">Hier kannst Du eine Buchungsanfrage bearbeiten:</p>
+
+        <b>Titel Deines Couch-Angebots</b>
+        <p id="titel"> </p>
+
+        <p id="bild" type="text" value=""> </p>
+        <img id="bild-vorschau" width="300px" src="" alt=""> <br>
+
+        <p hidden id="anfrage_id" name="anfrage_id"> </p>
+        <p hidden id="couch_id" name="couch_id"> </p>
+        <p hidden id="anbieter_user_id" name="anbieter_user_id"> </p>
+
+        <b>Motivationstext des Bewerbers</b>
+        <p id="motivationstext" name="motivationstext"> </p>
+
+        <b>Aktueller Buchungsstatus</b>
+        <p id="buchungsstatus" name="buchungsstatus"> </p> <br> <br>
+
+
+        <p id="nachricht"></p>
+
+        <button id="button-anfrage-annehmen" onclick="anfrageAnnehmen()">Anfrage annehmen</button>
+        <button id="button-anfrage-ablehnen" onclick="anfrageAblehnen()">Anfrage ablehnen</button>
+
+
+    </div>
+
+
+
+    <script src="js/anfragebearbeiten.js"></script>
+</body>
+
+</html>

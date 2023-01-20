@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Couch</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="flex">
+
+        <div class="container-header">
+
+            <a href="index.html">
+                <img class="couchlogo" src="img/CouchsurfingLogo.webp" alt="MMP Couchsurfing Logo">
+            </a>
+
+        </div>
+
+        <div class="container-header">
+
+            <h1>Meine Couch</h1>
+
+        </div>
+
+        <div class="container-header">
+
+
+        </div>
+
+        <div class="container-header">
+
+
+        </div>
+
+        <nav class="container-header">
+
+            <a href="https://716000-5.web.fhgr.ch/couchsurfing/">
+
+                <button id="neueCouch">Couch suchen</button>
+
+            </a>
+
+        </nav>
+
+        <nav class="container-header">    
+
+            <button id="logout" onclick="logout()"> Logout </button>
+
+        </nav>
+
+    </header>
+
+    <div id="meineCouch">
+
+        <p id="infoText"> </p>
+
+        <label for="titel">Titel</label> <br>
+        <input id="titel" type="text" value=""> <br>
+
+        <label for="adresse">Adresse</label> <br>
+        <input id="adresse" type="text" value=""> <br>
+
+        <label for="bild">Bild URL</label> <br>
+        <input id="bild" type="text" value=""> <br>
+        <img id="bild-vorschau" width="300px" src="" alt=""> <br>
+
+        <label for="beschreibung">Beschreibung</label> <br>
+        <textarea id="beschreibung" name="beschreibung"></textarea> <br> <br>
+
+        <label for="stadt">Stadt</label> <br>
+        <select class="dropdown" name="stadt" id="stadt">
+            <option value="2">Chur</option>
+            <option value="1">Bern</option>
+            <option value="3">Zürich</option>
+        </select> <br> <br>
+
+        <label for="titel">Verfügbar von (Eingabeformat YYYY-MM-DD)</label> <br>
+        <input id="datum_von" type="text" value=""> <br>
+
+        <label for="titel">Verfügbar bis (Eingabeformat YYYY-MM-DD)</label> <br>
+        <input id="datum_bis" type="text" value=""> <br>
+
+        <p>Verfügbarkeitsstatus</p>
+        <input type="radio" id="status-frei" name="status" value="1">
+        <label for="status-frei">Verfügbar</label><br>
+
+        <input type="radio" id="status-besetzt" name="status" value="0">
+        <label for="status-besetzt">Nicht Verfügbar</label><br> <br>
+
+        <label for="beschreibung">Kosten</label> <br>
+        <textarea id="kosten" name="beschreibung"></textarea> <br> <br>
+
+        <div id="anfragenListe"></div>
+
+        <p id="nachricht"> </p>
+
+        <button class="hidden" id="button-neue" onclick="neueCouch()">Veröffentlichen</button>
+        <button class="hidden" id="button-aktualisieren" onclick="aktualisiereCouch()">Aktualisieren</button>
+        <button class="hidden" id="button-loeschen" onclick="loescheCouch()">Löschen</button>
+
+
+
+    </div>
+
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/couch.js"></script>
+
+</body>
+
+</html>

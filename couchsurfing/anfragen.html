@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>MMP Couch Surfing</title>
+</head>
+
+<body>
+
+    <header class="flex">
+
+        <div class="container-header">
+
+            <a href="index.html">
+                <img class="couchlogo" src="img/CouchsurfingLogo.webp" alt="MMP Couchsurfing Logo">
+            </a>
+
+        </div>
+
+        <div class="container-header">
+
+            <h1>Couch anfragen</h1>
+
+        </div>
+
+        <div class="container-header">
+
+
+        </div>
+
+        <nav class="container-header">
+
+            <a href="index.html">
+
+                <button>Couch suchen</button>
+
+            </a>
+        
+        </nav>
+
+        <nav class="container-header">
+
+            <a href="couch.html">
+
+                <button>Meine Couch</button>
+
+            </a>
+
+        </nav>
+
+        <nav class="container-header">
+
+            <button id="logout" onclick="logout()"> Logout </button>
+
+        </nav>
+
+    </header>
+
+
+
+    <div id="neueAnfrage">
+
+        <p id="infoText">Hier kannst Du dem Couch-Anbieter eine Buchungsanfrage senden:</p>
+
+        <b>Titel</b>
+        <p id="titel"> </p>
+
+        <b>Adresse</b>
+        <p id="adresse"> </p>
+
+        <p id="bild" type="text" value=""> </p>
+        <img id="bild-vorschau" width="300px" src="" alt=""> <br>
+
+        <b>Beschreibung</b>
+        <p id="beschreibung" name="beschreibung"> </p> <br> <br>
+
+        <b>Verfügbar von</b>
+        <p id="datum_von" type="text" value=""> </p>
+
+        <b>Verfügbar bis</b>
+        <p id="datum_bis" type="text" value=""> </p>
+
+        <b>Kosten</b>
+        <p id="kosten" name="beschreibung"> </p> <br> <br>
+
+        <p hidden id="couch_id" name="couch_id"> </p>
+        <p hidden id="anbieter_user_id" name="anbieter_user_id"> </p>
+
+        <label for="motivationstext">Warum möchtest Du hier übernachten?</label> <br>
+        <textarea id="motivationstext" width="100%" name="motivationstext"> </textarea> <br> <br>
+
+        <p id="nachricht"> </p>
+
+        <button id="button-neue" onclick="neueAnfrage()">Anfrage absenden</button>
+
+
+
+    </div>
+
+
+
+    <script src="js/anfragen.js"></script>
+</body>
+
+</html>
