@@ -1,2 +1,2 @@
 # Couchsurfing
-IM Projekt HS22
+IM Projekt HS22 / siehe README.txt in /couchsurfing
