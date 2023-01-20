@@ -289,7 +289,7 @@ function loescheCouch() {
 };
 
 
-function holeUserCouchAnfragen(id) {
+function holeUserCouchAnfragen() {
 
     // get authentication variables from localstorage
     let userID = localStorage.getItem('userID');
